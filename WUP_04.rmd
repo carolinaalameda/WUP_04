@@ -71,11 +71,10 @@ According to the model 1, the P value is significantly small. The P value repres
 ```{r}
 #we specify the margins starting at the bottom and proceeding clockwise - thus 8.7 is the left side margin to hold the names of the factors
 par(mar = c(3, 15, 2, 2))
-plot(TukeyHSD(model1),las=2,conf.level=.99)
+plot(TukeyHSD(model1,conf.level=.95),las=2)
 ```
 
-This chart shows how the high school and graduate school are different from each other as well as LT high school and graduate school are also different from each other.
-
+This chart shows how the high school and graduate school are different from each other as well as LT high school and graduate school are also different from each other. At 95% confidence lvl, we see how LT high school - graduate and high school - graduate do not touch "0" line.
 
 
 # Discussion and Conclusion

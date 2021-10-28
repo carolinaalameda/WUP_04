@@ -50,6 +50,12 @@ The middle box and the one on the far right can go completely under the box to t
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+favstats(WORDSUM~DEGREE,data=mydata)
+```
+
+The people within the high school and LT high school have a lower mean than those with a bachelor degree, junior college degree, and graduate degree. Given in the plot, the people with a mean higher than 9 have a degree while LT high school and high school have a mean lower than 8 ot less.
+
 
 ## Inferential Results
 
